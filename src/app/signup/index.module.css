@@ -1,0 +1,212 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-image: linear-gradient(to bottom, #2e026d, #15162c);
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 3rem;
+	padding: 4rem 1rem;
+}
+
+@media (min-width: 640px) {
+	.container {
+		max-width: 640px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		max-width: 1024px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.container {
+		max-width: 1280px;
+	}
+}
+
+@media (min-width: 1536px) {
+	.container {
+		max-width: 1536px;
+	}
+}
+
+.title {
+	font-size: 3rem;
+	line-height: 1;
+	font-weight: 800;
+	letter-spacing: -0.025em;
+	margin: 0;
+	color: white;
+}
+
+@media (min-width: 640px) {
+	.title {
+		font-size: 5rem;
+	}
+}
+
+.pinkSpan {
+	color: hsl(280 100% 70%);
+}
+
+.form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 2rem 1rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 640px) {
+	.form {
+		max-width: 20rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.form {
+		gap: 2rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.form {
+		max-width: 30rem;
+	}
+}
+
+@media (min-width: 1280px) {
+	.form {
+		max-width: 40rem;
+	}
+}
+
+@media (min-width: 1536px) {
+	.form {
+		max-width: 50rem;
+	}
+}
+
+.formLabel {
+	font-size: 1.25rem;
+	line-height: 1;
+	font-weight: 600;
+	letter-spacing: -0.025em;
+	margin: 0;
+	color: white;
+}
+
+.formButton {
+	width: 100%;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	font-size: 1.25rem;
+	line-height: 1;
+	font-weight: 600;
+	letter-spacing: -0.025em;
+	margin: 0;
+	color: rgb(255, 255, 255);
+	background-color: hsl(280 100% 70%);
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+    border: none;
+}
+
+.formButton:hover {
+	background-color: hsl(280 100% 60%);
+}
+
+.formButton:disabled {
+	background-color: hsl(280 40% 50%);
+	cursor: not-allowed;
+}
+
+.formCheckText {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    margin: 0;
+    color: white;
+}
+
+.formCheckText input[type="checkbox"] {
+    width: auto;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+/* Error message styling */
+.errorMessage {
+	background-color: rgba(220, 38, 38, 0.2);
+	color: rgb(252, 165, 165);
+	padding: 0.75rem;
+	border-radius: 0.25rem;
+	font-size: 0.875rem;
+	width: 100%;
+	text-align: center;
+	border: 1px solid rgba(220, 38, 38, 0.5);
+    margin-bottom: 0.5rem;
+}
+
+/* Form links styling */
+.formLinks {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+	width: 100%;
+	margin-top: 0.5rem;
+}
+
+.formLinks a {
+	color: hsl(280 100% 85%);
+	text-decoration: none;
+	font-size: 0.875rem;
+	transition: color 0.2s ease-in-out;
+}
+
+.formLinks a:hover {
+	color: hsl(280 100% 95%);
+	text-decoration: underline;
+}
+
+/* Input fields styling */
+.form input {
+	width: 100%;
+	padding: 0.75rem;
+	border-radius: 0.25rem;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.1);
+	color: white;
+	font-size: 1rem;
+}
+
+.form input:focus {
+	outline: none;
+	border-color: hsl(280 100% 70%);
+	box-shadow: 0 0 0 2px rgba(216, 180, 254, 0.3);
+}
